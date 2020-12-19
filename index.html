@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html>
 <style>
-  body{
-  background: linear-gradient(90deg,rgb(51, 204, 255),rgb(255, 204, 255));
-}
-  .bar{
-  height: 7%;
-  width: 96.5%;
-  background-color: white;
-  border-style: solid;
-  border-color: white;
-  border-radius: 25px;
-  border-width: 20px;
-  font-size: 50px;
-  text-align: center;
-  position: absolute;
-  left:0.6%;
-  top: 1.2%;
-  z-index: 2;
-  }
-  .bar2{
-  height: 8%;
-  width: 97%;
-  background-color: rgb(51, 102, 153);
-  border-style: solid;
-  border-color: rgb(51, 102, 153);
-  border-radius: 25px;
-  border-width: 20px;
-  font-size: 50px;
-  position: absolute;
 
-  z-index: 1;
-}
-  .balls {
-    border-radius: 50%;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    top: 80%;
-  }
-  .balls:hover{
-    animation-name: jump;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
-  #red {
-    background: red;
-    left: 25%;
-    animation-timing-function: linear;
-  }
-  #blue {
-    background: blue;
-    left: 50%;
-    animation-timing-function: ease-out;
-  }
-  #green {
-    background: green;
-    left: 75%;
-    animation-timing-function: cubic-bezier(0.69, 0.1, 1, 0.1);
-  }
-
-  @keyframes jump {
-    50% {
-      top: 40%;
+    body {
+        background: white;
     }
-  }
+
+    hr.solid {
+        border-top: 2px solid #e1e1e1;
+    }
+
+    div.main {
+        height: 3%;
+        width: 100%;
+        position: absolute;
+        background: transparent;
+        border-bottom: 2px solid #efeeee;
+    }
+
+    div.menu {
+        position: fixed;
+        height: 2%;
+        width: 10%;
+        background-color: transparent;
+        font-family: Arial;
+        text-align: center;
+        z-index: 2;
+    }
+
+        div.menu:hover {
+            height: 2%;
+            width: 10%;
+            background-color: #efeeee;
+            border-style: solid;
+            border-radius: 25px;
+            border-color: #aaa9a9;
+        }
+
+    div.option1 {
+        position: fixed;
+        height: 2%;
+        width: 10%;
+        left: 10%;
+        background-color: transparent;
+        font-family: Arial;
+        text-align: center;
+        z-index: 2;
+    }
+
+        div.option1:hover {
+            height: 2%;
+            width: 10%;
+            background-color: #efeeee;
+            border-style: solid;
+            border-radius: 25px;
+            border-color: #aaa9a9;
+        }
+    .a {
+        text-decoration: none;
+        position: fixed;
+        height: 2%;
+        width: 10%;
+        background-color: transparent;
+        font-family: Arial;
+        text-align: center;
+        z-index: 2;
+    }
+        .a:hover {
+            height: 2%;
+            width: 10%;
+            background-color: #efeeee;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: #efeeee;
+        }
+    .centered-down{
+        position:fixed;
+        top: 75%;
+        left: 40%;
+    }
+    .name{
+        height: 10%;
+        width: 20%;
+        background:transparent;
+        font-family: Arial;
+        font-size: 34px;
+        text-align: center;
+    }
 </style>
 <body>
-<div class="bar2"></div>
-<div class="bar">Test</div> <br>
-<div class="balls" id="red"></div>
-<div class="balls" id="blue"></div>
-<div class="balls" id="green"></div>
+    <div class="main">
+        <div><a class="a" href="https://www.linkedin.com/in/kamel-daoudi-02aa0b1b5/">Linkedin</a></div>
+        <div><a class="a" style="left: 10%;" href="https://github.com/Daokam">Github</a></div>
+        <div><a class="a" style="left: 20%;" href="https://drive.google.com/file/d/1NsBX5KhXod6WpCeexJ6dZrOuhrk682hW/view?usp=sharing">C.V.</a></div>
+    </div>
+    <div class="centered-down name"> Kamel Daoudi</div>
 </body>
 </html>
