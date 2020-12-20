@@ -3,76 +3,38 @@
 <style>
 
     body {
-        background: white;
+        background: #F5F7FB;
     }
 
-    hr.solid {
-        border-top: 2px solid #e1e1e1;
-    }
-
-    div.main {
+    .main {
         height: 3%;
         width: 100%;
-        position: absolute;
-        background: transparent;
-        border-bottom: 2px solid #efeeee;
-    }
-
-    div.menu {
         position: fixed;
-        height: 2%;
-        width: 10%;
-        background-color: transparent;
-        font-family: Arial;
-        text-align: center;
-        z-index: 2;
+        background: #004E7C;
+        top: 0%;
+        left: 0%;
     }
 
-        div.menu:hover {
-            height: 2%;
-            width: 10%;
-            background-color: #efeeee;
-            border-style: solid;
-            border-radius: 25px;
-            border-color: #aaa9a9;
-        }
-
-    div.option1 {
-        position: fixed;
-        height: 2%;
-        width: 10%;
-        left: 10%;
-        background-color: transparent;
-        font-family: Arial;
-        text-align: center;
-        z-index: 2;
-    }
-
-        div.option1:hover {
-            height: 2%;
-            width: 10%;
-            background-color: #efeeee;
-            border-style: solid;
-            border-radius: 25px;
-            border-color: #aaa9a9;
-        }
     .a {
         text-decoration: none;
         position: fixed;
+        top:0.5%;
         height: 2%;
-        width: 10%;
+        width: 5%;
         background-color: transparent;
         font-family: Arial;
         text-align: center;
         z-index: 2;
+        color: white;
     }
         .a:hover {
             height: 2%;
-            width: 10%;
-            background-color: #efeeee;
+            width: 5%;
+            background-color: #70B2EC;
             border-style: solid;
             border-radius: 10px;
-            border-color: #efeeee;
+            border-color: #70B2EC;
+            text-align:center;
         }
     .centered-down{
         position:fixed;
@@ -87,13 +49,22 @@
         font-size: 34px;
         text-align: center;
     }
+    .bar-bottom {
+        height: 5%;
+        width: 100%;
+        position: fixed;
+        background: #004E7C;
+        bottom: 0%;
+        left: 0%;
+    }
 </style>
 <body>
     <div class="main">
-        <div><a class="a" href="https://www.linkedin.com/in/kamel-daoudi-02aa0b1b5/">Linkedin</a></div>
-        <div><a class="a" style="left: 10%;" href="https://github.com/Daokam">Github</a></div>
-        <div><a class="a" style="left: 20%;" href="https://drive.google.com/file/d/1NsBX5KhXod6WpCeexJ6dZrOuhrk682hW/view?usp=sharing">C.V.</a></div>
+        <div><a class="a" style="left: 1%;" href="https://www.linkedin.com/in/kamel-daoudi-02aa0b1b5/">Linkedin</a></div>
+        <div><a class="a" style="left: 8%;" href="https://github.com/Daokam">Github</a></div>
+        <div><a class="a" style="left: 15%;" href="https://drive.google.com/file/d/1NsBX5KhXod6WpCeexJ6dZrOuhrk682hW/view?usp=sharing">C.V.</a></div>
     </div>
     <div class="centered-down name"> Kamel Daoudi</div>
+    <div class="bar-bottom"></div>
 </body>
 </html>
