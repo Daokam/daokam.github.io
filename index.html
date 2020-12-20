@@ -7,7 +7,7 @@
     }
 
     .main {
-        height: 3%;
+        height: 4%;
         width: 100%;
         position: fixed;
         background: #004E7C;
@@ -18,7 +18,7 @@
     .a {
         text-decoration: none;
         position: fixed;
-        top:0.5%;
+        top: 0.95%;
         height: 2%;
         width: 5%;
         background-color: transparent;
@@ -27,6 +27,7 @@
         z-index: 2;
         color: white;
     }
+
         .a:hover {
             height: 2%;
             width: 5%;
@@ -34,21 +35,59 @@
             border-style: solid;
             border-radius: 10px;
             border-color: #70B2EC;
-            text-align:center;
+            text-align: center;
         }
-    .centered-down{
-        position:fixed;
-        top: 75%;
-        left: 40%;
+
+    .contents-space {
+        position: fixed;
+        height: 2.4%;
+        width: 1.4%;
+        top: 0.9%;
+        left: 1%;
+        background: transparent;
+
     }
-    .name{
+
+        .contents-space:hover + .contents {
+            animation-play-state: running;
+        }
+
+    .contents-icon {
+        position: fixed;
+        height: 0.30%;
+        width: 1.4%;
+        top: 0.9%;
+        left: 1%;
+        background: #F5F7FB;
+    }
+
+    .contents {
+        position: absolute;
+        height: 91%;
+        top: 4%;
+        width: 6%;
+        left: -6%;
+        background: #007CC7;
+        z-index: 10;
+        animation-name: move;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+
+    .name {
         height: 10%;
         width: 20%;
-        background:transparent;
+        background: transparent;
         font-family: Arial;
         font-size: 34px;
         text-align: center;
+        position: fixed;
+        top: 75%;
+        left: 40%;
     }
+
     .bar-bottom {
         height: 5%;
         width: 100%;
@@ -57,14 +96,27 @@
         bottom: 0%;
         left: 0%;
     }
+
+    @keyframes move {
+        100% {
+            left: 0%;
+        }
+    }
 </style>
 <body>
     <div class="main">
-        <div><a class="a" style="left: 1%;" href="https://www.linkedin.com/in/kamel-daoudi-02aa0b1b5/">Linkedin</a></div>
-        <div><a class="a" style="left: 8%;" href="https://github.com/Daokam">Github</a></div>
-        <div><a class="a" style="left: 15%;" href="https://drive.google.com/file/d/1NsBX5KhXod6WpCeexJ6dZrOuhrk682hW/view?usp=sharing">C.V.</a></div>
     </div>
-    <div class="centered-down name"> Kamel Daoudi</div>
+    <div class="contents-space">
+        <div class="contents-icon"></div> <div class="contents-icon" style="top:1.86%"></div> <div class="contents-icon" style="top: 2.82%"></div>
+
+    </div>
+    <div class="contents">
+        <h2 style="top: 6%; font-family: Arial;  text-align: center; text-decoration: underline; color: white;"> Liens:</h2>
+        <a class="a" style="top: 10%; margin-left: 0.5%; text-align: center;" href="https://www.linkedin.com/in/kamel-daoudi-02aa0b1b5/">Linkedin</a>
+        <a class="a" style="top: 14%;margin-left: 0.5%;" href="https://github.com/Daokam">Github</a>
+        <a class="a" style="top: 18%;margin-left: 0.5%" href="https://drive.google.com/file/d/1NsBX5KhXod6WpCeexJ6dZrOuhrk682hW/view?usp=sharing">C.V.</a>
+    </div>
+    <div class="name"> Kamel Daoudi</div>
     <div class="bar-bottom"></div>
 </body>
 </html>
